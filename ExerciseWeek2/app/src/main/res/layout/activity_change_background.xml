@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.inspiron.exweek2.ChangeBackgroundActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/imgPreviousImage"
+        android:layout_height="300dp" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/imgPreviousImage"
+        android:layout_above="@+id/btnSave"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <ImageView
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/imgBG1"
+                android:background="@drawable/shutterstock_248651677_supersize"
+                android:layout_weight="1" />
+            <ImageView
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shutterstock_130125752_huge"
+                android:id="@+id/imgBG2" />
+            <ImageView
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:id="@+id/imgBG3"
+                android:background="@drawable/shutterstock_280897220_huge"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/imgBG4"
+                android:background="@drawable/shutterstock_316465280_huge"
+                android:layout_weight="1" />
+            <ImageView
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shutterstock_333376544_huge"
+                android:id="@+id/imgBG5" />
+            <ImageView
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:id="@+id/imgBG6"
+                android:background="@drawable/shutterstock_390660301_huge"
+                android:layout_width="wrap_content" />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:text="Save"
+        android:id="@+id/btnSave"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout1"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="310dp"
+            android:id="@+id/edtText"
+            android:layout_height="60dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/imViewColor"
+            android:src="@mipmap/ic_launcher"
+            android:tint="@color/pink"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/btnIndigo"
+                android:layout_weight="1"
+                android:background="@color/indigo" />
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnGreen"
+                android:background="@color/green" />
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnTeal"
+                android:layout_width="wrap_content"
+                android:background="@color/teal" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnPink"
+                android:background="@color/pink" />
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnPurple"
+                android:background="@color/purple" />
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnBlue"
+                android:background="@color/blue" />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layout2"
+        android:text="SAVE"
+        android:id="@+id/btnSave"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

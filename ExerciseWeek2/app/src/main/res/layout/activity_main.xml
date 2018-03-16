@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.inspiron.exweek2.MainActivity">
+
+    <!--<TextView
+        android:id="@+id/txtvText"
+        android:layout_width="match_parent"
+        android:layout_height="346dp"
+        android:text="KHTN-DTVT"
+        android:gravity="center"
+        android:textColor="@color/pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />-->
+
+    <ImageView
+        android:id="@+id/txtvText"
+        android:layout_width="match_parent"
+        android:layout_height="346dp"
+        android:text="KHTN-DTVT"
+        android:gravity="center"
+        android:src="@mipmap/ic_launcher"
+        android:textColor="@color/pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <Button
+        android:id="@+id/btnChangeBackground"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="40dp"
+        android:text="CHANGE BACKGROUND"
+        app:layout_constraintTop_toBottomOf="@+id/txtvText"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btnChangeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="CHANGE TITLE"
+        app:layout_constraintTop_toBottomOf="@+id/btnChangeBackground"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</android.support.constraint.ConstraintLayout>
